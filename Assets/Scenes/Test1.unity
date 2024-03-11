@@ -364,53 +364,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1499349299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1029597728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1029597730}
-  - component: {fileID: 1029597729}
-  m_Layer: 0
-  m_Name: GHObjectPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1029597729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029597728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a9334378153854794aac59e3af39dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannonBalls: []
-  cannonBallPrefab: {fileID: 7858976041538171955, guid: 61bb3da7d4669464a83b5fb0ef0f0877, type: 3}
-  maxCannonBalls: 20
---- !u!4 &1029597730
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029597728}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0375714, y: -1.3295736, z: 32.1575}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1499349295
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,9 +376,6 @@ GameObject:
   - component: {fileID: 1499349298}
   - component: {fileID: 1499349297}
   - component: {fileID: 1499349296}
-  - component: {fileID: 1499349300}
-  - component: {fileID: 1499349301}
-  - component: {fileID: 1499349302}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -523,51 +473,6 @@ Transform:
   - {fileID: 808033674}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -65.901}
---- !u!114 &1499349300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499349295}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06324d4df72a7af43ac6e7417dcec670, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannonball: {fileID: 7858976041538171955, guid: 61bb3da7d4669464a83b5fb0ef0f0877, type: 3}
-  fireRate: 0.1
---- !u!114 &1499349301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499349295}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f23baf8d5744046809997482198781, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannonball: {fileID: 7042802830074389085, guid: 61bb3da7d4669464a83b5fb0ef0f0877, type: 3}
-  fireRate: 0.1
-  defaultCapacity: 10
-  maxSize: 20
-  collectionCheck: 1
---- !u!114 &1499349302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499349295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75688c28cd9ee8d49ae38f29f579c1ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ghObjectPool: {fileID: 1029597729}
-  fireRate: 0.1
 --- !u!1 &1595867480
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,4 +879,3 @@ SceneRoots:
   - {fileID: 1723683986}
   - {fileID: 1595867484}
   - {fileID: 193480262}
-  - {fileID: 1029597730}
